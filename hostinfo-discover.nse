@@ -14,7 +14,7 @@ This performs a host discovery on the network and tries to obtain the hostname u
 -- |   10.1.0.180  xkgt-arch.cromulon        Name query failed: ERROR    nil
 -- |   10.1.0.200                            Name query failed: ERROR    nil
 -- |   10.1.0.77   xkgt-Swanky.cromulon      Name query failed: ERROR    nil
--- |   10.1.0.88   DESKTOP-75HUSOR.cromulon  DESKTOP-75HUSOR             nil
+-- |   10.1.0.88   DESKTOP-23HUSOR.cromulon  DESKTOP-23HUSOR             nil
 -- |_  10.1.0.254  wall.cromulon             Name query failed: TIMEOUT  nil
 -- Version 0.1
 -- Created 05/11/2017 - v0.1 - created by Tamizh
