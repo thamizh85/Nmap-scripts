@@ -42,11 +42,9 @@ local snmp = require "snmp"
 postrule = function() return true end
 hostrule = function() return true end
 
-local output_structured = {}
 local output = tab.new()
 
 -- The Action Section --
-
 local function sort_ip_ascending(a, b)
   return ipOps.compare_ip(a, "lt", b)
 end
@@ -85,7 +83,7 @@ hostaction = function(host)
 end
 
 postaction = function()
-	local db = nmap.registry[SCRIPT_NAME]
+    local db = nmap.registry[SCRIPT_NAME]
     local order = stdnse.keys(db)
     table.sort(order, sort_ip_ascending )
     tab.addrow(output, 'HOST' , 'LOOKUP', 'NETBIOS_NAME', 'SMB_NAME')
